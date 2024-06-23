@@ -1,0 +1,93 @@
+/* Full-width background image without overlay */
+.bg-image {
+    background-image: url('https://img.freepik.com/premium-photo/man-ai-robot-waiting-job-interview-ai-vs-human-competition-generative-ai_149301-4475.jpg?w=900');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+    position: relative; /* Ensure relative positioning for absolute children */
+  }
+  
+  /* Main content styling */
+  .bg-light {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    position: relative; /* Ensure relative positioning for absolute children */
+    z-index: 1; /* Ensure the form is above the background image */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  /* Form controls with appropriate padding and margin */
+/* Form controls with appropriate padding and margin */
+.form-control {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 110px); /* Adjust width for input and button */
+}
+
+.input-group {
+  display: flex;
+  align-items: stretch;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+  
+  /* Suggestions box styling */
+  .suggestions-box {
+    margin-top: 20px;
+  }
+  
+  .suggestions-box ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .suggestions-box li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .suggestions-box li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Response box styling */
+  .response-box {
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  .response-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .response-box .border {
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 12px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .bg-light {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  

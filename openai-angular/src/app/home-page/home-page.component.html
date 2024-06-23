@@ -1,0 +1,30 @@
+<body>
+  <div id="intro" class="bg-image">
+    <video id="background-video" autoplay muted loop>
+      <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4">
+    </video>
+    <div class="mask"></div>
+
+    <div class="top-right">
+      <button routerLink="/login" type="button" class="btn btn-success px-3">Log out</button>
+    </div>
+
+
+
+    <div class="top-left">
+      <a [routerLink]="'/dashlogin'" class="dashboard-link btn btn-warning">Dashboard</a>
+    </div>
+
+
+    <div class="text-overlay">
+      <!-- <h1 class="ai-text">AI</h1> -->
+      <h2 class="welcome-text">Welcome to Mega Bot</h2>
+      <p>Revolutionizing AI Development and Deployment.</p>
+      <button routerLink="/response" type="button" class="btn btn-danger btn-rounded " data-mdb-ripple-init>Try Chat</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('background-video').playbackRate = 1.0;
+  </script>
+</body>

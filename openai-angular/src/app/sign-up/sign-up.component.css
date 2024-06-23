@@ -1,0 +1,122 @@
+/* .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* .content {
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+  /* display: flex;
+  justify-content: center;
+} */ 
+
+/* .signup-wrapper {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+} */
+
+/* .company-details {
+  flex: 1;
+  background-image: url('https://img.freepik.com/free-photo/sign-up-form-button-graphic-concept_53876-101286.jpg?size=626&ext=jpg&ga=GA1.1.1436211874.1718108294&semt=ais_user');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensure the background covers the full height */
+/* } */
+/* 
+.signup-form {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+/* } */
+
+/* .wrapper-2 {
+  width: 100%;
+  max-width: 400px; /* Limit maximum width of the form */
+  /* margin: auto; /* Center the form horizontally */
+/* }  */
+/* 
+.form-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; /* Center the title */
+/* } */ 
+
+/* .form {
+  margin-top: 20px;
+} */
+/* 
+.content-item {
+  margin-bottom: 15px;
+} */
+
+/* .content-item label { */
+
+/* .content-item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+} */ 
+
+/* .form-check-input {
+  margin-right: 10px; /* Add spacing between checkbox and label */
+/* } */
+
+/* .signup {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Make button full width */
+/* } */
+body{
+  margin: 0;
+  padding: 0;
+  height: 190%; 
+}
+
+.background-image {
+  background-image: url('https://forms.office.com/Images/Theme/meeting.png'); /* Replace with your image URL */
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust height as needed */
+  /* position: sticky;
+  top:0; */
+}
+
+.card {
+  /* margin-top: 20px; */
+}
+
+.card-body {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px;
+  color: #333; /* Adjust text color for better visibility */
+}
+
+.form-label {
+  color: #333; /* Label text color */
+}
+
+.btn-info {
+  background-color: #17a2b8; /* Button color */
+  border-color: #17a2b8; /* Button border color */
+}
+
+.btn-info:hover {
+  background-color: #117a8b; /* Hover state color */
+  border-color: #117a8b; /* Hover state border color */
+}
+
+.text-danger {
+  color: #dc3545; /* Red text color */
+}

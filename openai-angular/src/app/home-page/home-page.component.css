@@ -1,0 +1,184 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Background image container */
+.bg-image {
+  position: relative;
+  width: 100vw; /* Full width of viewport */
+  height: 100vh; /* Full height of viewport */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Background video styles */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of container */
+  height: 100%; /* Full height of container */
+  object-fit: cover; /* Cover the entire container */
+}
+
+/* Overlay mask */
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7) 100%);
+}
+
+
+.right-image {
+  position: absolute;
+  top: 50%;
+  right: 5%; /* Adjust right position as needed */
+  transform: translate(50%, -50%);
+  width: 40%; /* Adjust the width as needed */
+  max-width: 300px; /* Maximum width of the image */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.right-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add border radius */
+}
+
+/* Top right buttons */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  z-index: 1000;
+}
+
+.top-right button {
+  margin-left: 10px;
+  font-size:1.5em;
+}
+
+/* Top left dashboard button */
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.top-left a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* Text overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1000;
+}
+
+.text-overlay h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-overlay p {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.text-overlay button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+/* Button styles */
+.btn {
+  font-family: Arial, sans-serif;
+  border-radius: 9px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-rounded {
+  border-radius: 25px;
+}
+
+.btn-rounded:hover {
+  transform: scale(1.1);
+}
+.left-image {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Adjust left position as needed */
+  transform: translate(-50%, -50%);
+  width: 40%; /* Adjust the width as needed */
+  max-width: 300px; /* Maximum width of the image */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+
+.left-image {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Adjust left position as needed */
+  transform: translate(-50%, -50%);
+  width: 40%; /* Adjust the width as needed */
+  max-width: 300px; /* Maximum width of the image */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.left-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add border radius */
+  background-color: transparent !important; /* Set background color to transparent */
+}
+
+.welcome-text {
+  font-size: 3em; /* Font size for "Welcome to Mega Bot" */
+  font-weight: bold;
+  color: #ffffff; /* White color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

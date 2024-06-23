@@ -1,0 +1,20 @@
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Admin Portal Login</h2>
+            <form (ngSubmit)="login()">
+                <div class="form-input">
+                    <i class="icon fa fa-user"></i>
+                    <input type="text" name="username" [(ngModel)]="username" placeholder="Username" required>
+                </div>
+                <div class="form-input">
+                    <i class="icon fa fa-lock"></i>
+                    <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+        </div>
+    </div>
+</body>
+

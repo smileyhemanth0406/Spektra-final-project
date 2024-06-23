@@ -1,0 +1,45 @@
+<!-- Main Content -->
+<div class="bg-image">
+  <div class="overlay">
+    <div class="container-fluid h-100">
+      <div class="row h-100 align-items-center justify-content-center">
+        <div class="col-lg-8">
+          <div class="bg-light rounded shadow-lg p-4">
+            <h1 class="mb-4 text-center">Ask Me Anything</h1>
+            <form (ngSubmit)="onSubmit()" class="search-form">
+              <div class="form-group">
+                <label for="prompt" class="h5">Ask a question:</label>
+                <div class="input-group">
+                  <input type="text" id="prompt" [(ngModel)]="prompt" name="prompt" (input)="onTyping()" required class="form-control" placeholder="Type your question...">
+                  <button type="button" class="btn btn-primary" (click)="onSend()">Send</button>
+                  <button type="button" class=" ml-2" (click)="startVoiceRecognition()">🎙️</button>
+                </div>
+              </div>
+            </form>
+
+            <div *ngIf="suggestions.length > 0" class="suggestions-box mt-4 p-3 bg-white rounded shadow-sm">
+              <h2 class="h5">Suggestions:</h2>
+              <ul class="list-group">
+                <li *ngFor="let suggestion of suggestions" (click)="onSelectSuggestion(suggestion)" class="list-group-item list-group-item-action">
+                  {{ suggestion }}
+                </li>
+              </ul>
+            </div>
+  
+            <div *ngIf="response" class="response-box mt-4 p-3 bg-white rounded shadow-sm">
+              <h2 class="h5">Response:</h2>
+              <div class="p-3 border rounded">
+                {{ response }}
+              </div>
+            </div>
+  
+            <div *ngIf="errorMessage" class="error-box mt-4 p-3 bg-white rounded shadow-sm">
+              <h2 class="h5">Error:</h2>
+              <p class="p-3 border rounded text-danger">{{ errorMessage }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

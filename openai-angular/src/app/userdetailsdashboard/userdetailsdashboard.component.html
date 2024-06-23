@@ -1,0 +1,29 @@
+
+<div class="container">
+
+
+<h2>Users registered Mails</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>UsersMail</th>
+        <th>UserDate</th>
+    </tr>
+    </thead>
+    <tbody>
+ 
+    @for(item of getuser; track $index) {
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.registeredDate}}</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+</div>
+
+

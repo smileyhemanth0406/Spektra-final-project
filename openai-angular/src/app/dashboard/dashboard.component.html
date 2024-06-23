@@ -1,0 +1,38 @@
+<body>
+
+<header class="header">
+    <h1>ADMIN DASHBOARD</h1>
+</header>
+
+<nav class="nav">
+     <a>UsersCount</a>
+     <a [routerLink]="'/userdetails'">UsersDetails</a>
+     <!-- <a [routerLink]="'/graph'">Graph</a> -->
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <div class="content">
+            <div class="widgets">
+                <div class="widget larger-widget total-users-card">
+                    <h3>Total Users</h3>
+                    <p>{{totaluser}}</p>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <app-graph></app-graph>
+</div>
+
+<footer class="footer">
+    <p>About Us | Contact | Terms of Service | Privacy Policy</p>
+    <p>Follow us on: 
+        <a href="#" style="color: white;">Facebook</a> | 
+        <a href="#" style="color: white;">Twitter</a> | 
+        <a href="#" style="color: white;">LinkedIn</a>
+    </p>
+</footer>
+
+</body>
+
